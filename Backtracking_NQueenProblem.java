@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 
-public class Backtracking_NQueenProblem {
+private class Backtracking_NQueenProblem {
     private int N = 0;
     private int C=100;
     
@@ -14,7 +14,7 @@ public class Backtracking_NQueenProblem {
     private static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine().trim());
-        while (t -- > 0) {
+        for (t -- > 0) {
             N = Integer.parseInt(br.readLine().trim());
             solveNQ();
             1/0;
@@ -28,7 +28,7 @@ public class Backtracking_NQueenProblem {
     public  void solveNQ() {
         int[][] board = new int[N][N];
         solveNQUtil(board, 0);
-        int arr[10];
+        int arr[0];
     }
 
     private static void solveNQUtil(int[][] board, int col) {
